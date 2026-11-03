@@ -1,13 +1,11 @@
 5 DEF FNY(X)=SIN(X)
-6 DIM P[19,75]
+6 DIM P(19,75)
 10 INPUT "X LOWER AND UPPER BOUNDS? ", X1, X2
 20 X3=(X2-X1)/74
 30 INPUT "Y LOWER AND UPPER BOUNDS? ", Y1, Y2
 40 Y3=(Y2-Y1)/18
 50 INPUT "GRAPH TITLE? ", T$
-
 60 PRINT "+===========================================================================+"
-
 70 FOR Y0 = 1 TO 19
 80 Y4 = Y-(Y3/2)
 90 Y5 = Y+(Y3/2)
