@@ -1,1 +1,0 @@
-/home/mmell/.bash_profile
