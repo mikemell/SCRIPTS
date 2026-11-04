@@ -1,4 +1,4 @@
-echo -n "ANSI terminal control codes             ${default}"
+echo -n "ANSI terminal control codes                       "
 default='\033[0m'                # Text mode reset
 bold_on='\033[1m'                # Bold on
 bold_off='\033[22m'              # Bold off
