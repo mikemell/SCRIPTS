@@ -1,3 +1,4 @@
+echo -n "ANSI terminal control codes                       "
 # Text modes
 default='\033[0m'                # Text mode reset
 bold_on='\033[1m'                # Bold on
@@ -117,4 +118,4 @@ underlinewhite='\033[4;37m'      # White
 #ESC[0K	erase from cursor to end of line
 #ESC[1K	erase start of line to the cursor
 #ESC[2K	erase the entire line
-echo -e "${lightyellow}ANSI terminal control codes loaded.${default}"
+echo -e "[${green}loaded${default}]"

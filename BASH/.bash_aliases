@@ -1,3 +1,4 @@
+echo -n "BASH aliases                                      "
 alias echo='echo -e'
 alias biorythm='LDATE=$((($(date -u +%-s)-$(date -u +%-s -d 19620108))/86400)) && echo "${LDATE}, P$((${LDATE}-$(($((${LDATE}/23))*23))))/23, E$((${LDATE}-$(($((${LDATE}/28))*28))))/28, M$((${LDATE}-$(($((${LDATE}/33))*33))))/33"'
 alias jdate='echo "$((($(date +%-s)-$(date +%-s -d $(date +%-Y)0101))/86400+1))"'
@@ -17,4 +18,4 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias runcob='/usr/bin/cobc 2>/dev/null -j -x'
 alias basic='cd ~/SCRIPTS/BASIC && /usr/bin/bwbasic /home/mmell/SCRIPTS/BASIC/basic.h'
-echo "${lightyellow}BASH aliases loaded.${default}"
+echo "[${green}loaded${default}]"
