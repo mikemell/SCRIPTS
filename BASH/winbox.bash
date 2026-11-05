@@ -2,6 +2,7 @@ WIDTH="$(stty size | cut -d\  -f2)"
 HEIGHT="$(stty size | cut -d\  -f1)"
 echo -n "[2J[H"
 
+#echo -n "[7m+"
 echo -n "+"
 COL="3"
 while true; do
@@ -34,8 +35,8 @@ while true; do
 	fi
 	COL="$((${COL}+1))"
 done
-echo -n '+'
+echo -n '+[0m'
 
 # what follows is because this is for fullscreen menu operations
-echo -n -e "[3;17fTITLE"
+echo -n -e "[3;38fTITLE"
 echo -n -e "[8;3f"
