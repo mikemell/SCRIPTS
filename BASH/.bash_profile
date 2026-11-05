@@ -1,3 +1,4 @@
+cat /etc/motd
 [ -d ~/bin ] && PATH="${PATH}:/usr/local/bin:~/bin"
 [ -f ~/.ansi ] && source ~/.ansi
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
